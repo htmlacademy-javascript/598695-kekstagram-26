@@ -1,14 +1,9 @@
 // 1. Функция для проверки максимальной длины строки
-const checkLengthComment = function(comment, maxValue) {
-  const count = comment.length;
-  if (count <= maxValue) {
-    return true;
-  } else {
-    return false;
-  }
-};
+function checkStringLength (string, length) {
+  return string.length <= length;
+}
 
-checkLengthComment('Хочу программировать на JS', 140);
+checkStringLength('Хочу программировать на JS', 140);
 
 // 2. Функция, возвращающая случайное целое число из переданного диапазона включительно. Пример использования функции:
 
